@@ -1,0 +1,17 @@
+<%- include('partials/header') -%>
+
+    <% for(var i = 8; i >= 4; i--){ %>
+
+        <div class="blog">
+        <h1> <%= posts[i].title %> </h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu_fpPmbK-bebEeX036y7frmW06amtCkG1ew&usqp=CAU">
+        <p> <%= posts[i].content.substring(0, 100) + " ... " %> 
+        <a href="/posts/<%= posts[i].title %>">Read More</a>
+        </p>
+        </div>
+
+   <% } %>
+
+   <% if(posts.length > 6) %> <button class="btn btn-primary" onclick="location.href='https://www.youtube.com/'" type="button">Next</button>
+
+<%- include('partials/footer') -%>

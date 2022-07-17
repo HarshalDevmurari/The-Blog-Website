@@ -1,0 +1,22 @@
+<%- include('partials/header') -%>
+
+<style>
+    .blog {
+        max-width: 77%;
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+</style>
+
+<div class="blog">
+<h1> <%= title %> </h1>
+
+<img src="<%= imgLink %>">
+
+<p> <%= content %> </p>
+</div>
+
+<%- include('partials/footer') -%>

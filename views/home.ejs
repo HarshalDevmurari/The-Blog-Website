@@ -1,0 +1,47 @@
+<%- include('partials/header') -%>
+
+<style>
+    .homeDiv {
+    padding: 15px;
+    }
+</style>
+
+<div class="homeDiv">
+    <h1>Home</h1>
+    <p style="margin: 20px;">
+        <%= homeStartingContent %>
+    </p>
+    <p style="margin: 20px;">
+        <%= homeStartingContent %>
+    </p>
+</div>
+
+    <h2 style="color: #777;">Categories: </h2>
+    <h4 style="color: #777;">1. Zoology</h4>
+        <p style="margin: 20px;">Zoology is the branch of biology that studies the animal kingdom, including the structure, embryology, evolution, classification, habits, and distribution of all animals, both living and extinct, and how they interact with their ecosystems.
+        <a href="/zoology" style="text-decoration: none;">See posts on Zoology</a> 
+        </p>
+
+    <!-- <div class="row">
+
+        <% for(var i=posts.length - 1; i>= 0; i--){ %>
+            <div class="col-lg-6 col-md-6">
+                <div class="blog">
+                    <a href="/posts/<%= posts[i].title %>" style="text-decoration: none;">
+                        <h1>
+                            <%= posts[i].title %>
+                        </h1>
+                    </a>
+                    <a href="/posts/<%= posts[i].title %>"><img src="<%= posts[i].imgLink %>"></a>
+                    <p>
+                        <%= posts[i].content.substring(0, 130) + " ... " %>
+                            <a href="/posts/<%= posts[i].title %>" style="text-decoration: none";>Read More</a>
+                    </p>
+                </div>
+            </div>
+            <% } %>
+            
+  <div class="sharethis-sticky-share-buttons"></div>
+    </div> -->
+
+    <%- include('partials/footer') -%>

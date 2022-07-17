@@ -1,0 +1,54 @@
+<%- include('partials/header') -%>
+  </div>
+
+  <style>
+    .btn {
+      margin-top: 10px;
+    }
+
+    .navbar {
+      background-color: transparent !important;
+      margin: 0 98px;
+    }
+
+    body {
+      background-image: url('https://images.pexels.com/photos/316466/pexels-photo-316466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+      background-repeat: no-repeat;
+      background-size: 1365px 585px;
+      /* background-size: cover; */
+      background-position: top;
+    }
+  </style>
+
+  <div class="mainDiv">
+
+    <div class="contactDiv">
+      <h3 class="newH1">Get In Touch</h3>
+
+      <p class="newH1">If you want to hire someone to create a beautiful website, you are at the right place!!</p><br>
+
+      <form action="/contact" method="post">
+
+        <div class="form-group">
+          <label>Your Name</label>
+          <input class="form-control" type="text" name="userName"><br>
+
+          <label>Email</label>
+          <input class="form-control" type="email" name="userMail"><br>
+
+          <label>You can put your message here!</label>
+          <textarea class="form-control" rows="3" name="userMsg"></textarea>
+                <button class=" btn btn-light" type="submit" style="margin-right: 10px;"">Submit</button>
+                <button class=" btn btn-dark" type="reset">Reset</button>
+            </div>
+        </form>
+    
+    </div>
+
+<div class="footer-padding"></div>
+  <div class="footer">
+    <p>Made with ❤️ by Harshal Devmurari</p>
+  </div>
+</div>
+</body>
+</html>

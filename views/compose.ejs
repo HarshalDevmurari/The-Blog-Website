@@ -1,0 +1,28 @@
+<%- include('partials/header') -%>
+
+    <style>
+        .composeDiv {
+            margin: 10px auto 64px auto;
+        }
+    </style>
+
+    <div class="composeDiv">
+        <h1 class="home">Compose</h1>
+
+        <form class="" action="/compose" method="post">
+
+            <div class="form-group">
+                <label>Title: </label>
+                <input class="form-control" type="text" name="postTitle">
+                <label>Post: </label>
+                <textarea class="form-control" name="postBody" id="" cols="30" rows="5"></textarea>
+                <label>Image link: </label>
+                <input class="form-control" type="url" name="imgLink">
+            </div>
+            <button class="btn btn-dark" type="submit" name="button">Publish</button>
+
+        </form>
+
+    </div>
+
+    <%- include('partials/footer') -%>
